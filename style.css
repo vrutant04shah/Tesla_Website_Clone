@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    color:#ffffff;
+    font-family: 'Figtree', sans-serif;
+}
+
+.desktop{
+    display: none;
+}
+
+@media (min-width: 768px){
+    .desktop{
+        display: initial;
+    }
+}
+header{
+    display: grid;
+    grid-template-columns: auto 1fr 30px;
+    padding: 15px 32px;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    left:0;
+}
+
+a.logo{
+    height: 24px;
+    width: 120px;
+    color: inherit;
+}
+
+header a{
+    color: inherit;
+}
+
+header nav a{
+    text-decoration: none;
+    padding: 8px 4px;
+
+}
+
+header nav.center{
+    text-align: center;
+
+}
+
+.right{
+    text-align: right;
+    display: flex;
+    z-index: 2;
+    margin-left: -50px;
+
+}
+.icon{
+    height: 25px;
+    width: 25px;
+
+}
+
+section{
+  position: relative;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.videoheight{
+  height: 126vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+#Video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+.content{
+    height: 100vh;
+    width: 100%;
+    padding-top: 8vh;
+    text-align: center;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: min-content min-content auto min-content min-content min-content;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.content-separate{
+    height: 100vh;
+    width: 100%;
+    padding-top: 15vh;
+    text-align: center;
+    z-index: 20;
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    margin-bottom: 10px;
+    justify-content: center;
+    color: #000000;
+}
+
+.content-separate2{
+    height: 100vh;
+    width: 100%;
+    padding-top: 15vh;
+    text-align: center;
+    z-index: 20;
+    display: grid;
+    grid-template-rows: auto min-content;
+    margin-bottom: 10px;
+    justify-content: center;
+    color: #000000;
+}
+
+.content-separate3{
+    height: 100vh;
+    width: 100%;
+    padding-top: 15vh;
+    text-align: center;
+    z-index: 20;
+    display: grid;
+    grid-template-rows: min-content min-content auto min-content min-content min-content;
+    margin-bottom: 10px;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.content-separate4{
+    height: 100vh;
+    width: 100%;
+    padding-top: 15vh;
+    text-align: center;
+    z-index: 20;
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    margin-bottom: 10px;
+    justify-content: center;
+    color: #ffffff;
+}
+
+section h1{
+    font-size: 2.5rem;
+    padding: 5px;
+}
+
+section h2{
+    font-size: 1.3rem;
+}
+
+section a{
+    color: inherit;
+}
+
+section .buttons a {
+    display: block;
+    background-color: #eee;
+    color: inherit;
+    padding: 12px 80px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+section .buttons a:first-child{
+    background-color: #ffffff;
+    color: #222222a6;
+}
+
+section .buttons a:last-child{
+    background-color: #222222a6;
+    color: #ffffff;
+}
+
+section .buttons1 a {
+    display: block;
+    background-color: #eee;
+    color: inherit;
+    padding: 12px 80px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+section .buttons2 a {
+    display: inline-block;
+    color: inherit;
+    padding: 9px 60px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    border: solid 3px #ffffff;
+    width: 80%;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.7s;
+}
+
+section .buttons2 a:hover{
+    background-color: #ffffff;
+    color: black;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.7s;
+}
+
+section .buttons{
+    display: grid;
+    row-gap: 15px;
+}
+
+section .buttons1{
+    display: grid;
+    row-gap: 15px;
+}
+
+@media(min-width: 768px){
+    section .buttons{
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+}
+
+@media(min-width: 768px){
+    section .buttons1{
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+    }
+}
+
+.copywrite{
+    background-color: #000000;
+}
+
+.tcl-video{
+    z-index: 1;
+}
+
+aside{
+    position: fixed;
+    right: -3000px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px;
+    z-index: 50;
+    height: 100vh;
+}
+aside.active{
+    right: 0px;
+}
+
+.sidebartext{
+    color: black;
+}
+
+aside a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    padding: 20px 0px;
+    font-size: 20px;
+}
+
+aside button.close{
+    font-size: 20px;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+aside button.side{
+    font-size: 20px;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    padding: 10px;
+}
+
+.menuBtn{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .menuBtn{
+        display: block;
+        background-color: transparent;
+        color: white;
+        border: none;
+        color: inherit;
+        position: absolute;
+        top: 10px;
+        right:10px;
+        z-index: 2;
+        cursor: pointer;
+        backdrop-filter: blur(3px);
+        padding: 12px;
+        border-radius: 4px;
+        font-weight: 500;
+    }
+}
+
+.togglebar-tag{
+    color: #222222a6;
+    text-decoration: underline;
+    display: none;
+}
+
+.togglebar-side{
+    color: black;
+    text-decoration: none;
+    display: none;
+}
+
+.list1{
+    list-style: none;
+    display: none;
+}
+
+.list2{
+    list-style: none;
+}
+
